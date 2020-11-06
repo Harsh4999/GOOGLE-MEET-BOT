@@ -18,11 +18,11 @@ while j<=3: #J SHOULD BE LESS THAN THE NUMBER OF URL TO ATTEND HERE PUT NUMBER O
 	driver = webdriver.Chrome(chrome_options=options)
 	driver.get('https://gmail.com/')
 	search = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input')
-	search.send_keys('harsh.trivedi109881@marwadiuniversity.ac.in') #ENTER YOUR GMAIL ADDRESS
+	search.send_keys('') #ENTER YOUR GMAIL ADDRESS
 	button = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]')
 	button.click()
 	driver.implicitly_wait(5)
-	driver.find_element_by_name('password').send_keys('Aupu@362') #ENTER YOUR GMAIL PASSWORD
+	driver.find_element_by_name('password').send_keys('') #ENTER YOUR GMAIL PASSWORD
 	driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button/div[2]').click()
 	driver.implicitly_wait(15)
 
