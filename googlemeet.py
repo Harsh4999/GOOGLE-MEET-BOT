@@ -50,6 +50,7 @@ while j<=3: #J SHOULD BE LESS THAN THE NUMBER OF URL TO ATTEND HERE PUT NUMBER O
 			i+=1
 
 		else :
+	 #ENTER YOUR MESSAGE TO BE GIVEN IN CHAT-BOX AT BEGINING , MIDDLE & END OF CLASS eg = roll number, yes sir etc.WRITE WHERE I HAVE WRITTEN 7161
 			driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[1]/div[1]/div[2]/textarea').send_keys('7161')
 			time.sleep(2)
 			driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[2]/span').click()
