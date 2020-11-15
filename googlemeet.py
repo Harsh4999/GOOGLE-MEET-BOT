@@ -13,22 +13,22 @@ options.add_experimental_option("prefs", { \
      "profile.default_content_setting_values.notifications": 2
   })
 tab_url = ['https://meet.google.com/frk-dsyh-jby' , 'https://meet.google.com/kmq-qppj-kdc' , 'https://meet.google.com/iig-euva-bxv']  
-#name_call = ['harsh','Harsh','Harrsh','Harshh']
+
 j=0
 p=5 #ENTER TIME BETWEEN 2 CLASSES
 while j<=3:
 	driver = webdriver.Chrome(chrome_options=options)
 	driver.get('https://gmail.com/')
 	search = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input')
-	search.send_keys('harsh.trivedi109881@marwadiuniversity.ac.in') #ENTER YOUR GMAIL ADDRESS
+	search.send_keys('') #ENTER YOUR GMAIL ADDRESS
 	button = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]')
 	button.click()
 	driver.implicitly_wait(5)
-	driver.find_element_by_name('password').send_keys('Aupu@362') #ENTER YOUR GMAIL PASSWORD
+	driver.find_element_by_name('password').send_keys('') #ENTER YOUR GMAIL PASSWORD
 	driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button/div[2]').click()
 	driver.implicitly_wait(15)
 
-	#tab_url = 'https://meet.google.com/frk-dsyh-jby' #ENTER GOOGLE MEET URL
+
 	driver.execute_script("window.open('');")
 	driver.switch_to.window(driver.window_handles[1])
 	driver.get(tab_url[j])
@@ -63,7 +63,8 @@ while j<=3:
 				try:
 					text = r.recognize_google(audio)
 					print('Said : {}'.format(text))
-					if(text.find('Harsh') != -1 or text.find('harsh') != -1 or text.find('161') != -1):
+					if(text.find('Harsh') != -1 or text.find('harsh') != -1 or text.find('161') != -1): #Enter your name when sir/mam calls your name 
+						#now enter your response to the name call I have written 7161 you can replace it with your response
 						driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[1]/div[1]/div[2]/textarea').send_keys('7161')
 						driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[2]/span').click()
 						continue
