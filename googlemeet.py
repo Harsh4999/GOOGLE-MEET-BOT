@@ -34,22 +34,16 @@ while j<=3:
 	driver.get(tab_url[j])
 	driver.implicitly_wait(3)
 	driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[8]/div[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[1]/span/span').click()
-	#driver.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[6]/div[3]/div/div/div[2]/div/div[1]/div[2]/div/div[2]/div/div[1]/div[1]/span/span').click()
+	
 	#Turning Audio & Video off.
 	driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[9]/div[2]/div[3]/div/div/span/span').click()
-	#driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[9]/div[2]/div[3]/div/div/span').click()
-	#driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[9]/div[2]/div[1]/div/div/div/span/span').click()
-	
-	#driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[6]/div[3]/div/div[2]/div[1]/span/span/div').click()
-	#q = driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[3]/div/div[2]/div[2]/div[1]/div[1]')
-	#print(q)
-	
+	driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[9]/div[2]/div[1]/div/div/div').click()
 	n = 18 #ENETER CLASS TIME IN SECONDS 
 	t=n/3
 	st=time.time()
 
 	driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[6]/div[3]/div/div[2]/div[3]/span/span/div/div').click()
-	#driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[6]/div[3]/div/div[2]/div[3]/span/span/div').click()
+	
 	while True:
 		ct=time.time()
 		et=ct-st
@@ -73,23 +67,18 @@ while j<=3:
 						continue
 
 
-					#driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[2]/span').click()
+					
 				except:
 					print('Sorry')
 		else:
 			break			
 		
-		#	time.sleep(t)
-		#driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[1]/div[1]/div[2]/textarea').click().send_keys('7161')
-		#driver.implicitly_wait(3)
-		#time.sleep(2)
-		#driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[3]/div/div[2]/div[2]/div[2]/span[2]/div/div[3]/div[2]/span/span/span/svg').click()
-		#	i+=1
+	
 
 
-	#time.sleep(n) 
+	 
 	driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[8]/div[3]/div[9]/div[2]/div[2]/div').click()
-	#driver.find_element_by_xpath('//*[@id="ow3"]/div[1]/div/div[6]/div[3]/div[9]/div[2]/div[2]/div').click()
+	
 	driver.quit()
 	time.sleep(p)
 	j+=1
