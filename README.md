@@ -6,7 +6,7 @@ Open CMD and first install python & chocolatey
 Then type = pip install selenium
             choco install chromewebdriver
             pip install pipwin
-            pipwin install pyaudio
+            pipwin install pyaudio     sdfafs
  ********************************************
  Done you are ready to execute the script!!!
             
